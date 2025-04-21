@@ -29,8 +29,8 @@ function Navigation() {
                 </>
             ) : (
                 <>
-                    {role === 'ADMIN' && <Link to="/gestion-comptes">Gestion des comptes</Link>}
-                    {role === 'SECRETAIRE' && <Link to="/planifier-rendezvous">Planifier un rendez-vous</Link>}
+                   
+                    
                     
                 </>
             )}

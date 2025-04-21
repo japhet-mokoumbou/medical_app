@@ -130,7 +130,7 @@ const DoctorDashboard = () => {
             <AppBar position="static" sx={{ backgroundColor: '#1976d2', width: '100%' }}>
                 <Toolbar>
                     <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                        Tableau de bord Médecin
+                        Bienvenu dans votre tableau de bord
                     </Typography>
                     <Button color="inherit" startIcon={<LogoutIcon />} onClick={handleLogout}>
                         Déconnexion

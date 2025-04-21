@@ -1,6 +1,6 @@
 package com.medical_app.entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.util.List;
 
@@ -17,15 +17,15 @@ public class Utilisateur {
     private String statut;
 
     @OneToMany(mappedBy = "patient")
-    @JsonBackReference
+    @JsonIgnore
     private List<RendezVous> rendezVousPatient;
 
     @OneToMany(mappedBy = "medecin")
-    @JsonBackReference
+    @JsonIgnore
     private List<RendezVous> rendezVousMedecin;
 
     @OneToMany(mappedBy = "createur")
-    @JsonBackReference
+    @JsonIgnore
     private List<RendezVous> rendezVousCreateur;
 
     // Constructeurs, getters et setters
